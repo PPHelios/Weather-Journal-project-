@@ -6,7 +6,7 @@ const apiKey = ',&appid=401412172d49fdd5026bb72d8049fe31&units=metric&units=metr
 const button = document.getElementById('generate');
 // Create a new date instance dynamically with JS
 const d = new Date();
-const newDate = d.getDate() + '.' + d.getMonth() + '.' + d.getFullYear();
+const newDate = d.getDate() + '.' + (d.getMonth() + 1) + '.' + d.getFullYear();
 // Retrieve the weather data from OpenWeather
 const getTemp = async (baseUrl, zip, apiKey) =>
 {
